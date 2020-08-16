@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Todo</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+</head>
+<body class='test'>
+<div class="container">
+    <h1>ToDo List</h1>
+    <form action="" id="todo">
+        <input type="text" name='title'  placeholder="Enter a new task">
+    <input type="submit" value='+' id='submitBtn' > 
+    </form>
+    <ul id="todos">
+
+
+    </ul>
+
+    <p id="clear">Clear Todos </p>
+</div>
+
+<div id="modal">
+    <p id='closeModal'>close</p>
+    <form action="" id="todoInfo">
+        <div class="formBlock">
+                <p>Created on: <span id="createdAt"></span></p>
+            <input type="text" name='title' placeholder="Title">
+        </div>
+        <div class="formBlock">
+            
+            <textarea name="description" id="" cols="30" rows="10"></textarea>
+        </div>
+        <div class="formBlock check" >
+            
+            <label for="completed">Completed</label> <input type="checkbox" name= 'completed'> 
+        </div>
+        <div class="formBlock">
+            
+            <label for="dueDate">Expected Date of completion</label><input type="datetime-local" name='dueDate' >
+            <p>Completed on: <span id="completedAt"></span></p>
+
+        </div>
+        <div class="formBlock"></div>
+       <input type="submit" value="save" id='save'>
+    </div>
+    </form>
+
+</div>
+
+    <script src="todo.js"></script>
+</body>
+</html>
